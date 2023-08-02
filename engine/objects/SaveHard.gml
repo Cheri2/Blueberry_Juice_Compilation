@@ -31,9 +31,6 @@ if !init {
     init = true;
 }
 
-if place_meeting(x, y, Bullet) {
-    event_user(0);
-}
 
 if input_check_pressed(key_shoot) {
     if place_meeting(x, y, Player) if !Player.frozen {

@@ -5,6 +5,8 @@ action_id=603
 applies_to=self
 */
 index = 0;
+image_speed=0.1
+// make sure index does not collide!!
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

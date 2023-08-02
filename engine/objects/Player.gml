@@ -383,6 +383,84 @@ else {
         image_speed = 0.5;
     }
 }
+#define Collision_PlatformRenex
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+
+    if (global.grav==-1) platformOffset=sprite_get_yoffset(mask_index)
+    else platformOffset=sprite_get_height(mask_index)-sprite_get_yoffset(mask_index)
+
+
+    if (global.grav==1) {
+        //platforms, normal gravity
+
+        //find top of the platform using a binary search
+        oy=y
+        search=16
+        repeat (5) {
+            if (instance_place(x,y,other.id)) y-=search
+            else y+=search
+            search/=2
+        }
+        if (instance_place(x,y,other.id)) y-=1
+        ytop=bbox_bottom+1
+        y=oy
+
+        if (y-vspeed/2<=ytop) {
+            //check for platform snap
+            if (other.snap || vspeed-other.vspeed>=0) {
+                y=ytop-platformOffset
+                if (!place_free(x,y)) {
+                    //crushed!
+                    if (other.vspeed<0) {
+                        move_outside_solid(270,20)
+                    } else y=oy
+                } else {
+                    //land on it
+                    vspeed=max(0,other.vspeed)
+                    player_land()
+
+                }
+            }
+
+        }
+    } else {
+        //upside down platforms
+
+        //find bottom of the platform using a binary search
+        oy=y
+        search=-16
+        repeat (5) {
+            if (instance_place(x,y,other.id)) y-=search
+            else y+=search
+            search/=2
+        }
+        if (instance_place(x,y,other.id)) y+=1
+        ytop=bbox_top
+        y=oy
+
+        if (y-vspeed/2>=ytop) {
+            if (other.snap || vspeed-other.vspeed<=0) {
+                //check for platform snap
+                y=ytop+platformOffset
+                if (!place_free(x,y)) {
+                    //crushed!
+                    if (other.vspeed>0) {
+                         move_outside_solid(270,20)
+                    } else y=oy
+                } else {
+                    //land on it
+                    vspeed=min(0,other.vspeed)
+                    player_land()
+
+                }
+            }
+
+        }
+    }
 #define Other_4
 /*"/*'/**//* YYD ACTION
 lib_id=1

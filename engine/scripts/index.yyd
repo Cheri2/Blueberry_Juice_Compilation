@@ -104,3 +104,9 @@ sound_balance
 cement_blocks
 
 gm82room_jtool_table
+shader_cloud
+ps3_cloud
+unpack_shader
+event_game_start_extend
+
+

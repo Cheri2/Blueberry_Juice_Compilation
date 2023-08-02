@@ -1,3 +1,5 @@
++Universal
+	|ShaderReset
 +World
 	|World
 	|VolumeCheck
@@ -18,6 +20,7 @@
 	|BlockMoving
 	|BlockMini
 	|Platform
+	|PlatformRenex
 	|SaveBlocker
 	|TileDisplay
 	|SolidTileDisplay
@@ -84,3 +87,6 @@
 		|objSampleBossWarp
 		|objSampleBossItem
 	|SampleStretchingBlock
++Lobby
+	|lb_ShaderCloud
+|lb_TrigBridge

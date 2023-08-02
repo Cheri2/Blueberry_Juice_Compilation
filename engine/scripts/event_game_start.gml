@@ -42,3 +42,4 @@ if !show_volume_check {
 else {
     instance_create(0, 0, VolumeCheck);
 }
+event_game_start_extend()

@@ -87,9 +87,12 @@
 	|sprTrigger
 	|sprButtonLeft
 	|sprButtonRight
+	|sprite100
 +Items
 	|sprItem
 	|sprBossItem
 +Misc
 	|sprEmpty
 	|spr1x1
+|sprSlicePlatform
+|sprBlueberry

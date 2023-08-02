@@ -8,9 +8,9 @@ global.debug_key = vk_control;
 
 // Game properties
     // The title of your game, used in the window bar and the default title screen.
-    global.game_title = "Verve GM8.2 Engine";
+    global.game_title = "Blueberry Juice Compilation";
     // The room you get loaded in on a new save file.
-    global.first_room = rSample;
+    global.first_room = rTutorial;
     // Size of the game window.
     global.game_width = 800;
     global.game_height = 608;
@@ -27,7 +27,7 @@ global.debug_key = vk_control;
     // The location of all save data files.
     global.save_folder = "save\";
     // The password used to encrypt save files. "" means no encryption.
-    global.save_encryption_password = "verve";
+    global.save_encryption_password = "stellahoshino";
     //
     global.optimize_solids = 2;
 

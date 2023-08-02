@@ -1,4 +1,4 @@
-name=Arial
+name=Times New Roman
 size=12
 bold=1
 italic=0

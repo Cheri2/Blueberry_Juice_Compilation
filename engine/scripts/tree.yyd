@@ -65,6 +65,7 @@
 	|event_room_start
 	|event_world_step
 	|event_world_end_step
+	|event_game_start_extend
 +Player
 	|player_try_jump
 	|player_ground_jump
@@ -110,3 +111,10 @@
 	|ternary
 	|get_formatted_time
 	|ease_value
++Shader
+	|shader_cloud
+	+Packed
+		|ps3_cloud
+	+Renex
+		|unpack_shader
++Utils
