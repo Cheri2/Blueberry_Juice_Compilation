@@ -1,4 +1,3 @@
 //gm82 fields begin
-room_to=rCoreLobby
-type=type_normal
+text="<- The Startpoint"
 //gm82 fields end
