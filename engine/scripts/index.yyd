@@ -110,3 +110,5 @@ unpack_shader
 event_game_start_extend
 
 
+ps3_cloud_night
+shader_cloud_night

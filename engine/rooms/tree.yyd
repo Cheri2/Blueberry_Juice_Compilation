@@ -6,3 +6,7 @@
 +Lobby
 	|rTutorial
 	|rCoreLobby
+	|rStandardLobby
++Standard
+	+Stella-Groovy
+		|stb_room1

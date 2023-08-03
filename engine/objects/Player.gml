@@ -422,6 +422,7 @@ applies_to=self
                     //land on it
                     vspeed=max(0,other.vspeed)
                     player_land()
+                    on_floor=1
 
                 }
             }
@@ -455,6 +456,7 @@ applies_to=self
                     //land on it
                     vspeed=min(0,other.vspeed)
                     player_land()
+                    on_floor=1
 
                 }
             }

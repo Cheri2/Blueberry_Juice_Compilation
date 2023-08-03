@@ -94,5 +94,16 @@
 +Misc
 	|sprEmpty
 	|spr1x1
-|sprSlicePlatform
-|sprBlueberry
++MiscAdded
+	|sprDiff
+	|sprBlueberry
+	|sprSlicePlatform
++Groovy
+	|sprUhuhuUp
+	|sprUhuhuRight
+	|sprUhuhuDown
+	|sprUhuhuLeft
+	|sprUhuhuMiniUp
+	|sprUhuhuMiniRight
+	|sprUhuhuMiniDown
+	|sprUhuhuMiniLeft

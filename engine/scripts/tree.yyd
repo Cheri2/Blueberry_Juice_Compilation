@@ -113,8 +113,10 @@
 	|ease_value
 +Shader
 	|shader_cloud
+	|shader_cloud_night
 	+Packed
 		|ps3_cloud
+		|ps3_cloud_night
 	+Renex
 		|unpack_shader
 +Utils
