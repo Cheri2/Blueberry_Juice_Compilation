@@ -1,5 +1,5 @@
 //gm82 fields begin
-background=stb_TileUhuhu
+background=stb_TileUhuhuRed
 left=0
 top=0
 width=32
