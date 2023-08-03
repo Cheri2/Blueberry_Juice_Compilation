@@ -90,6 +90,7 @@
 +Lobby
 	|lb_ShaderCloud
 	|lb_TrigBridge
+	|lb_SignStage
 	|lb_ShaderNight
 	|lb_DiffIndicator
 +Groovy

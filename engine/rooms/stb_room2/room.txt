@@ -1,5 +1,5 @@
 caption=
-width=1600
+width=800
 height=608
 snap_x=16
 snap_y=16
@@ -20,7 +20,7 @@ bg_tile_v0=1
 bg_hspeed0=0
 bg_vspeed0=0
 bg_stretch0=0
-bg_visible1=1
+bg_visible1=0
 bg_is_foreground1=0
 bg_source1=stb_bgUhuhuRed
 bg_xoffset1=800

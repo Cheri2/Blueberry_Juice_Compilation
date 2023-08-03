@@ -1,3 +1,3 @@
 //gm82 fields begin
-text="Groovy! by stella"
+index=2
 //gm82 fields end

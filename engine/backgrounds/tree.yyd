@@ -2,11 +2,13 @@
 	|bMegaman
 +Tiles
 	|bDefaultTiles
-	|background6
+	|bGSTiles
 	|bTree
 |lb_TileGrass
 |lb_TileGrassAlt
 |lb_Minty
 |lb_Cele1A
 |stb_TileUhuhu
+|stb_TileUhuhuRed
 |stb_bgUhuhu
+|stb_bgUhuhuRed

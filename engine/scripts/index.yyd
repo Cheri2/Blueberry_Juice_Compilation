@@ -112,3 +112,4 @@ event_game_start_extend
 
 ps3_cloud_night
 shader_cloud_night
+get_item_range

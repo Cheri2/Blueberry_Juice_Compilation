@@ -53,6 +53,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+draw_set_color(c_white)
 if (sprite_index=sprPlatform) {
     //code by renex
 

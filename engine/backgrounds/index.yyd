@@ -4,9 +4,11 @@ bMegaman
 bTree
 lb_TileGrass
 lb_TileGrassAlt
-background6
+bGSTiles
 lb_Minty
 lb_Cele1A
 
 stb_TileUhuhu
 stb_bgUhuhu
+stb_TileUhuhuRed
+stb_bgUhuhuRed
