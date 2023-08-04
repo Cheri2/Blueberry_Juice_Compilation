@@ -9,6 +9,7 @@ can_save = true;
 max_difficulty = 1;
 grav = 1;
 init = false;
+soundeffect = "";
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -58,7 +59,7 @@ if can_save && instance_exists(Player) && global.grav == grav {
             //exit;
         }
     }
-
+    if(soundeffect!="")sound_play(soundeffect);
     can_save = false;
 
     image_index = 1;
