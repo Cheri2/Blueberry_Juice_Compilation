@@ -8,7 +8,7 @@ text = "";
 room_to = noone;
 x_to = noone;
 y_to = noone;
-
+clear_id=0;
 type_normal = 0;
 type_outside = 1;
 type_wrap_around = 2;
@@ -59,6 +59,7 @@ applies_to=self
 //field rangemin: number
 //field rangemax: number
 //field diff: number
+//field clear_id: number
 #define Other_10
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -91,7 +92,9 @@ applies_to=self
 draw_self()
 draw_sprite(sprDiff,diff,mean(bbox_left, bbox_right),bbox_top-96)
 if(rangemin!=-1) {
-draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-48,bbox_top-80)
+
+if(clear_id!=0) {if(save_get(str_cat("boss_item", clear_id))) draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-48,bbox_top-80) else draw_sprite(sprBlueberryBW,0,mean(bbox_left, bbox_right)-48,bbox_top-80)
+}else draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-48,bbox_top-80)
     draw_set_font(fDefaultSmall);
     draw_set_halign(fa_middle);
     draw_set_valign(fa_bottom);

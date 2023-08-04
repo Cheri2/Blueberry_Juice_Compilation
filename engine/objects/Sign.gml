@@ -43,5 +43,5 @@ if display_text {
     draw_set_halign(fa_middle);
     draw_set_valign(fa_bottom);
 
-    draw_text_outlined(mean(bbox_left, bbox_right), bbox_top, text, c_white, c_black);
+    draw_text_outlined_forced(mean(bbox_left, bbox_right), bbox_top, text, c_white, c_black);
 }
