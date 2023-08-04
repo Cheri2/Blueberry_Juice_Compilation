@@ -20,6 +20,6 @@ switch(argument0) {
         return "Keyboard Controls";
 
     case "value":
-        return "";
+        return " ";
 
 }
