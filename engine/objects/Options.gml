@@ -176,9 +176,9 @@ if state == state_options {
         _row_value = script_execute(_option, "value");
 
         draw_set_halign(fa_left);
-        draw_text_outlined_forced(options_x_margin, yy, _row_name, c_white, c_black, 2);
+        draw_text_outlined_natural(options_x_margin, yy, _row_name, c_white, c_black, 2);
         draw_set_halign(fa_right);
-        draw_text_outlined_forced(global.game_width - options_x_margin, yy, _row_value, c_white, c_black, 2);
+        draw_text_outlined_natural(global.game_width - options_x_margin, yy, _row_value, c_white, c_black, 2);
 
         yy += options_y_step;
     }

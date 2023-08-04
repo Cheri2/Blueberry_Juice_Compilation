@@ -1,18 +1,21 @@
 +Backgrounds
+	|stb_bgUhuhu
+	|stb_bgUhuhuRed
+	|bgTitle
 	|bMegaman
 +Tiles
 	|bDefaultTiles
+	|stb_TileUhuhu
+	|stb_TileUhuhuRed
+	|lb_Cele1A
 	|bGSTiles
+	|lb_Minty
+	|lb_TileGrass
+	|lb_TileGrassAlt
+	|lb_City
 	|bTree
-|lb_TileGrass
-|lb_TileGrassAlt
-|lb_Minty
-|lb_Cele1A
-|stb_TileUhuhu
-|stb_TileUhuhuRed
-|stb_bgUhuhu
-|stb_bgUhuhuRed
-|bgTitle
-|lb_JCWarning
-|lb_GimmickWarning
-|lb_City
++Foregrounds
+	|bMist
++Extra
+	|lb_JCWarning
+	|lb_GimmickWarning

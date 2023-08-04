@@ -114,3 +114,4 @@ ps3_cloud_night
 shader_cloud_night
 get_item_range
 draw_text_outlined_forced
+draw_text_outlined_natural
