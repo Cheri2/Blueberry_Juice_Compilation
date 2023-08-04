@@ -1,3 +1,4 @@
 //gm82 fields begin
-room_to=stb_room1
+enabled=true
+screen_lock=false
 //gm82 fields end

@@ -1,5 +1,6 @@
 //gm82 fields begin
-text="<- The Startpoint"
+room_to=rTutorial
+text="The Startpoint"
 rangemin=0
 rangemax=0
 diff=3

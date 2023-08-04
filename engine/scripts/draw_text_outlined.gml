@@ -1,6 +1,8 @@
 ///draw_text_outlined(x, y, string, text_color, outline_color, [outline_width=1], [detail=8])
 var i, xx, yy, _text, _text_color, _outline_color, _outline_width, _detail, _angle, _x_off, _y_off;
-xx = clamp(argument[0],string_width(argument[2])/2 + 4,800-string_width(argument[2])/2 - 4);
+if(argument[0]-string_width(argument[2])/2>view_xview&&argument[0]+string_width(argument[2])/2<800+view_xview) {xx = clamp(argument[0],view_xview+string_width(argument[2])/2 + 4,view_xview+800-string_width(argument[2])/2 - 4);
+}
+else exit;
 yy = argument[1];
 _text = argument[2];
 _text_color = argument[3];
