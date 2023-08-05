@@ -21,7 +21,7 @@
 	|BlockMoving
 	|BlockMini
 	|Platform
-	|PlatformRenex
+	|PlatformNosnap
 	|SaveBlocker
 	|TileDisplay
 	|SolidTileDisplay
@@ -43,6 +43,10 @@
 	|MiniSpikeLeft
 	|KillerBlock
 	|Cherry
+	+Celeste Type
+		|SpikeCeleUp
+		|PlayerKillerCele
+	+Vegetable
 +Saves
 	|SaveMedium
 	|SaveMediumFlip
@@ -94,6 +98,9 @@
 	|lb_SignStage
 	|lb_ShaderNight
 	|lb_DiffIndicator
+	|PlatformRenex
 +Groovy
 	|stb_UhuhuEffect
 	|stb_Save
++Dreamcatcher
+	|stc_DCVisuals

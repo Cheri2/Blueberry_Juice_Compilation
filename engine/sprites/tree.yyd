@@ -30,6 +30,7 @@
 	|sprConveyorLeft
 	|sprConveyorRight
 	|sprPlatform
+	|sprPlatformAttain
 	|sprSaveBlocker
 	+Slopes
 		|sprSlope
@@ -101,6 +102,7 @@
 	|sprStrawberry
 	|sprBlueberryBW
 	|sprSlicePlatform
+	|sprSlicePlatformAttain
 	|sprWhite
 +Groovy
 	|sprUhuhuUp
@@ -113,3 +115,4 @@
 	|sprUhuhuMiniLeft
 |sprDoorSMW
 |sprCrystalSave
+|sprSpikeCele

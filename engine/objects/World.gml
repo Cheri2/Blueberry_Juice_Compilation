@@ -116,5 +116,5 @@ if is_in_game && global.debug_overlay > 0 {
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_font(fDefaultSmall);
-    draw_text_outlined(16, 16, _text, c_white, c_black);
+    draw_text_outlined_natural(16, 16, _text, c_white, c_black);
 }

@@ -334,6 +334,10 @@ var _warp;
 if place_meeting(x, y, PlayerKiller) {
     player_kill();
 }
+if place_meeting(x, y, PlayerKillerCele) {
+    cele_check=instance_place(x,y,PlayerKillerCele)
+    if(!(dot_product(-dsin(cele_check.image_angle),-dcos(cele_check.image_angle),hspeed,vspeed)>0)) {player_kill()}
+}
 
 if global.killer_room_border if bbox_right < 0 || bbox_left >= room_width || bbox_bottom < 0 || bbox_top >= room_height {
     _warp = noone;
