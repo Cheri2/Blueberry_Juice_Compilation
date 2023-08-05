@@ -4,6 +4,7 @@
 	|sprMusic
 	|sprCamera
 	|sprKiller
+	|sprKillerMinty
 +Player
 	|sprPlayerIdle
 	|sprPlayerRun
@@ -100,6 +101,7 @@
 	|sprStrawberry
 	|sprBlueberryBW
 	|sprSlicePlatform
+	|sprWhite
 +Groovy
 	|sprUhuhuUp
 	|sprUhuhuRight

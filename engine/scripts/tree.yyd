@@ -113,7 +113,7 @@
 	|ternary
 	|get_formatted_time
 	|ease_value
-+Shader
++Visuals
 	|shader_cloud
 	|shader_cloud_night
 	+Packed
@@ -121,5 +121,7 @@
 		|ps3_cloud_night
 	+Renex
 		|unpack_shader
-+Utils
+	|scrDrawShadow
++Utility_Extended
+	|scrArray
 |get_item_range
