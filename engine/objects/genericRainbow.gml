@@ -8,7 +8,9 @@ sf_mask=surface_create(800,608);
 sf_mask1=surface_create(800,608);
 sf_inline=surface_create(800,608);
 with(Block) if(object_index=Block) sprite_index=sprWhite
+with(BlockMini) sprite_index=sprWhite1616
 with(PlayerKiller) visible=false
+instance_create(0,0,genericRainbowChild)
 #define Other_5
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -42,7 +44,7 @@ draw_clear_alpha(0,1);
 draw_set_blend_mode(bm_subtract);
 
 with Block{
-if(object_index=Block)
+if(object_index=Block||object_index=BlockMini)
 draw_self();
 }
 with PlayerKiller{
@@ -76,7 +78,7 @@ surface_reset_target();
 
 surface_set_target(sf_inline)
 
-draw_rectangle_color(0,0,799,607,make_color_hsv(current_time/300,80,205),make_color_hsv(current_time/300 + 64,80,205),make_color_hsv(current_time/300 + 128,80,205),make_color_hsv(current_time/300 + 192,80,205),0);
+draw_rectangle_color(0,0,799,607,make_color_hsv(current_time/300,140,205),make_color_hsv(current_time/300 + 64,140,205),make_color_hsv(current_time/300 + 128,140,205),make_color_hsv(current_time/300 + 192,140,205),0);
 draw_set_blend_mode(bm_subtract);
 
 draw_surface(sf_mask,0,0);
@@ -91,7 +93,6 @@ surface_reset_target();
 
 draw_set_blend_mode(bm_normal);
 surface_set_target(application_surface)
-
 var r_1;
 r_1=3;
 draw_surface(sf_inline,0,0);

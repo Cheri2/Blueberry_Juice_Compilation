@@ -20,7 +20,7 @@ if(!surface_exists(surf3)) {
     surf3 = surface_create(view_wview,view_hview);
 }
 if(!surface_exists(surf4)) {
-    surf3 = surface_create(view_wview,view_hview);
+    surf4 = surface_create(view_wview,view_hview);
 }
 //Clear the surface, then draw shadow sprites onto surface (at full opacity)
 surface_set_target(surf);
