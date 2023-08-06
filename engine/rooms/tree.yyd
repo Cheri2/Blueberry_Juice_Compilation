@@ -7,13 +7,25 @@
 	|rTutorial
 	|rCoreLobby
 	|rStandardLobby
+	|rAdvancedLobby
+	|rVeteranLobby
 +Standard
 	+Stella-Groovy
 		|stb_room1
 		|stb_room2
 		|stb_room3
 		|stb_room4
+	+voracious
+		|vor_room1
+		|vor_room2
+		|vor_room3
+		|vor_room4
+		|vor_room5
+		|vor_room6
 +Advanced
 	+Stella-Dreamcatcher
 		|stc_room1
 		|stc_room2
+	+verycool-Vegatable
+		|very_rLeeks
++Veteran

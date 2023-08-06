@@ -90,13 +90,13 @@ action_id=603
 applies_to=self
 */
 draw_self()
-draw_sprite(sprDiff,diff,mean(bbox_left, bbox_right),bbox_top-96)
+draw_sprite(sprDiff,diff,mean(bbox_left, bbox_right),bbox_top-80)
 if(rangemin!=-1) {
 
-if(clear_id!=0) {if(save_get(str_cat("boss_item", clear_id))) draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-48,bbox_top-80) else draw_sprite(sprBlueberryBW,0,mean(bbox_left, bbox_right)-48,bbox_top-80)
-}else draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-48,bbox_top-80)
+if(clear_id!=0) {if(save_get(str_cat("boss_item", clear_id))) draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-32,bbox_top-64) else draw_sprite(sprBlueberryBW,0,mean(bbox_left, bbox_right)-32,bbox_top-64)
+}else draw_sprite(sprBlueberry,0,mean(bbox_left, bbox_right)-32,bbox_top-64)
     draw_set_font(fDefaultSmall);
     draw_set_halign(fa_middle);
     draw_set_valign(fa_bottom);
-    draw_text_outlined(mean(bbox_left, bbox_right)+8, bbox_top-56, str_cat(string(get_item_range(rangemin,rangemax)),"/",string(rangemax-rangemin+1)), c_white, c_black);
-    }draw_text_outlined(mean(bbox_left, bbox_right), bbox_top-32, text, c_white, c_black);
+    draw_text_outlined(mean(bbox_left, bbox_right)+8, bbox_top-40, str_cat(string(get_item_range(rangemin,rangemax)),"/",string(rangemax-rangemin+1)), c_white, c_black);
+    }draw_text_outlined(mean(bbox_left, bbox_right), bbox_top-16, text, c_white, c_black);
