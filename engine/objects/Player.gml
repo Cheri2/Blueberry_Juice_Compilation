@@ -511,5 +511,5 @@ draw_sprite_ext(_draw_sprite, image_index, _draw_x, _draw_y, x_scale, _draw_y_sc
 
 // Draw the bow
 if has_bow {
-    draw_sprite_ext(sprPlayerBow, image_index, _draw_x, _draw_y, x_scale, image_yscale * global.grav, image_angle, image_blend, image_alpha);
+    draw_sprite_ext(sprPlayerBow, max_air_jumps-air_jumps, _draw_x, _draw_y, x_scale, image_yscale * global.grav, image_angle, image_blend, image_alpha);
 }
