@@ -60,6 +60,13 @@
 		|WaterRefreshing
 		|WaterGroundJump
 		|WaterCatharsis
+		|CherryWater
+		|CherryWaterRefreshing
+		|CherryWaterCatharsis
+		+Cosmetic Water
+			|WaterHS
+			|WaterRefreshingHS
+			|WaterCatharsisHS
 	+Blocks
 		|BlockFake
 		|BlockInvisible
@@ -111,3 +118,7 @@
 	|very_bgEffect1
 |genericRainbowChild
 |genericRainbow
++Cosmos
+	|levis_BorderTile
+	|levis_TransitionFade
+	|levis_waterclarity

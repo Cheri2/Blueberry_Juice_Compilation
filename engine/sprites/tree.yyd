@@ -49,6 +49,7 @@
 	|sprMiniSpikeLeft
 	|sprKillerBlock
 	|sprCherry
+	|sprCherryLevis
 	+Cherry colors
 		|sprCherryOrange
 		|sprCherryYellow
@@ -64,6 +65,8 @@
 		|sprCherryWhite
 		|sprCherryGray
 		|sprCherryBlack
+	|sprMiniLevis
+	|sprSpikeLevis
 +Saves
 	|sprSaveMask
 	|sprSaveMedium
@@ -74,6 +77,9 @@
 	|sprSaveVeryHardFlip
 +Gimmicks
 	|sprWater
+	|sprWaterHS
+	|sprWaterRefreshingHS
+	|sprWaterCatharsisHS
 	|sprWaterRefreshing
 	|sprWaterGroundJump
 	|sprWaterCatharsis
@@ -84,6 +90,9 @@
 	|sprGravityDown
 	|sprSign
 	|sprWarp
+	|sprCherryWater
+	|sprCherryWaterRefreshing
+	|sprCherryWaterCatharsis
 +Triggers
 	|sprTriggerMask
 	|sprTrigger
@@ -105,6 +114,7 @@
 	|sprSlicePlatformAttain
 	|sprWhite
 	|sprWhite1616
+	|sprBorder
 +Groovy
 	|sprUhuhuUp
 	|sprUhuhuRight
