@@ -11,6 +11,10 @@ with(Block) if(object_index=Block) sprite_index=sprWhite
 with(BlockMini) sprite_index=sprWhite1616
 with(PlayerKiller) visible=false
 instance_create(0,0,genericRainbowChild)
+with(SaveHard) {
+instance_create(x,y,vor_Save)
+instance_destroy()
+}
 #define Other_5
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -48,6 +52,9 @@ if(object_index=Block||object_index=BlockMini)
 draw_self();
 }
 with PlayerKiller{
+draw_self()
+}
+with vor_Save{
 draw_self()
 }
 

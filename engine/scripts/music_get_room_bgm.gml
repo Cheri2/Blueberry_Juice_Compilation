@@ -12,6 +12,14 @@ switch(room) {
     case stc_room5:
     case stc_room6:
         return "stadv"
+    case vor_room1:
+    case vor_room2:
+    case vor_room3:
+    case vor_room4:
+    case vor_room5:
+    case vor_room6:
+    case vor_roomend:
+        return "musVoracious"
 
     default:
         return "";

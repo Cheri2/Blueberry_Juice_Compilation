@@ -19,7 +19,7 @@ for(angle=0; angle <= 360; angle += 30) {
     obj.image_xscale = 0.25;
     obj.image_yscale = 0.25;
     obj.alarm[0] = 0;
-    obj.alarm[1] = 90;
+    obj.alarm[1] = 130;
 }
 offset = (offset + 15) mod 360;
 alarm[0] = 75;
