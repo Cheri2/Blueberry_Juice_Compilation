@@ -5,6 +5,11 @@ switch(room) {
     case rMenu:
     case rOptions:
         return "";
+    case stb_room1:
+    case stb_room2:
+    case stb_room3:
+    case stb_room4:
+        return "lapisbgm"
     case stc_room1:
     case stc_room2:
     case stc_room3:
