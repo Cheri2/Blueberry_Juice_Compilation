@@ -73,6 +73,7 @@
 	|player_release_jump
 	|player_hit_ceiling
 	|player_land
+	|player_land_half
 	|player_shoot
 	|player_kill
 	|player_flip
@@ -119,9 +120,11 @@
 	+Packed
 		|ps3_cloud
 		|ps3_cloud_night
+		|ps3_stpink
 	+Renex
 		|unpack_shader
 	|scrDrawShadow
+	|shader_stpink
 +Utility_Extended
 	|scrArray
 |get_item_range

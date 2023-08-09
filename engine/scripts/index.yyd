@@ -117,3 +117,6 @@ draw_text_outlined_forced
 draw_text_outlined_natural
 scrArray
 scrDrawShadow
+player_land_half
+ps3_stpink
+shader_stpink

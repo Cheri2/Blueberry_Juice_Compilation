@@ -5,6 +5,11 @@
 // Pause game
 if !global.paused {
     if input_check_pressed(key_pause) if is_in_game() {
+        if(instance_exists(Player)) { // no cheese!!!!!! - Stella
+        if(!Player.on_floor) {
+        exit;
+        }
+        }
         _pause_surf = surface_get("pause_surf", global.game_width, global.game_height);
         surface_copy(_pause_surf, 0, 0, application_surface);
 

@@ -242,7 +242,10 @@ if !place_free(x + hspeed, y + vspeed) {
             player_hit_ceiling();
         }
         else {
+            if(place_meeting(x, y+vspeed, BlockUnstable)&&!place_meeting(x,y+vspeed,Block)) player_land_half()
+            else
             player_land();
+            
         }
     }
     
