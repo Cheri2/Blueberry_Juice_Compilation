@@ -20,7 +20,14 @@ switch(room) {
     case vor_room6:
     case vor_roomend:
         return "musVoracious"
-
+    case rBlueberry1:
+    case rBlueberry2:
+    case rBlueberry3:
+    case rBlueBerry4:
+    case rBlueberry5:
+    case rBlueberry6:
+    case rBlueberrySecret:
+        return "musLevis"
     default:
         return "";
 }
