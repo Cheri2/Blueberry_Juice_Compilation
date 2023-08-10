@@ -33,6 +33,9 @@ switch(room) {
     case rBlueberry6:
     case rBlueberrySecret:
         return "musLevis"
+    case stv_room1:
+    case stv_room2:
+        return "trrt"
     default:
         return "";
 }
