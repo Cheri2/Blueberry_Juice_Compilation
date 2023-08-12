@@ -35,6 +35,8 @@ switch(room) {
         return "musLevis"
     case stv_room1:
     case stv_room2:
+        case stv_room3:
+    case stv_room4:
         return "trrt"
     default:
         return "";

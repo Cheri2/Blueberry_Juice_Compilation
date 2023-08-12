@@ -4,6 +4,13 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+with(SaveHard) {
+instance_create(x,y,levis_Save)
+instance_destroy()
+}
+with(Warp) {
+sprite_index=sprWarpLevis
+}
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1

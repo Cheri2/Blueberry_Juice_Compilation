@@ -122,8 +122,11 @@
 +Cosmos
 	|levis_BorderTile
 	|levis_TransitionFade
+	|ChickenKiller
+	|levis_Save
 	|levis_waterclarity
 	|levis_chiken
 |vor_Save
 |stv_ShaderPink
 |object109
+|surfaceHab
