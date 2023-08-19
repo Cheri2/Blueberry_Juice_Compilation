@@ -113,6 +113,7 @@
 	|sprSlicePlatform
 	|sprSlicePlatformAttain
 	|sprWhite
+	|sprUnstableWhite
 	|sprWhite1616
 	|sprBorder
 +Groovy
@@ -139,3 +140,5 @@
 |sprSpikeNL
 |sprSpikeNR
 |sprSpikeNU
+|sprMintyJR
+|sprWaterDream

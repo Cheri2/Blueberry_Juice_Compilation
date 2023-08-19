@@ -58,7 +58,7 @@ if !frozen {
 if h_input != 0 if vine_direction == 0 {
     x_scale = h_input;
 }
-
+if(!place_meeting(x,y,WaterDream)) {
 if _ice == noone {
     hspeed = h_input * run_speed;
 }
@@ -71,7 +71,7 @@ else {
         hspeed -= sign(hspeed) * min(_ice.slip, abs(hspeed));
     }
 }
-
+}
 _conveyor = instance_place(x, y + global.grav, ConveyorLeft);
 if _conveyor != noone {
     hspeed += _conveyor.spd;
@@ -514,5 +514,5 @@ draw_sprite_ext(_draw_sprite, image_index, _draw_x, _draw_y, x_scale, _draw_y_sc
 
 // Draw the bow
 if has_bow {
-    draw_sprite_ext(sprPlayerBow, max_air_jumps-air_jumps, _draw_x, _draw_y, x_scale, image_yscale * global.grav, image_angle, image_blend, image_alpha);
+    draw_sprite_ext(sprPlayerBow, clamp(air_jumps,0,5), _draw_x, _draw_y, x_scale, image_yscale * global.grav, image_angle, image_blend, image_alpha);
 }
