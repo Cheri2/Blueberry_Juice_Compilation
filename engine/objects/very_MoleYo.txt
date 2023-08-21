@@ -1,0 +1,7 @@
+sprite=very_sprMoleYo
+visible=0
+solid=0
+persistent=0
+depth=900
+parent=PlayerKiller
+mask=

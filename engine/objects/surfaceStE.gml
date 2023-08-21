@@ -46,7 +46,7 @@ surface_set_target(surfBlock)
 draw_clear_alpha(0,1)
 draw_set_blend_mode(bm_subtract)
 with(Block) {if(object_index!=Platform) draw_sprite_ext(sprite_index,0,x-view_xview[0],y,image_xscale,image_yscale,0,c_white,1)}
-with(BlockUnstable) draw_self()
+with(BlockUnstable) draw_sprite_ext(sprite_index,0,x-view_xview[0],y,image_xscale,image_yscale,0,c_white,0.4)
 draw_set_blend_mode(bm_normal)
 surface_reset_target()
 surface_set_target(sf_mask1)
