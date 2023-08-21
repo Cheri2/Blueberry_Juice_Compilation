@@ -30,7 +30,7 @@ if(!surface_exists(surfW)) {
 }
 draw_set_alpha(1)
 surface_set_target(surfW)
-draw_clear_alpha(c_gray,0)
+draw_clear_alpha(c_black,0)
 draw_set_blend_mode(bm_normal)
 with(WaterCatharsis) repeat(2) draw_sprite_ext(sprite_index,floor(image_index),x,y,image_xscale,image_yscale,image_angle,c_white,1)
 draw_set_blend_mode(bm_subtract)
