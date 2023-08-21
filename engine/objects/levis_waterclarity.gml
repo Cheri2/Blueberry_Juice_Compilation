@@ -30,9 +30,9 @@ if(!surface_exists(surfW)) {
 }
 draw_set_alpha(1)
 surface_set_target(surfW)
-draw_clear_alpha(c_black,0)
+draw_clear_alpha(make_color_rgb(95,95,95),0)
 draw_set_blend_mode(bm_normal)
-with(WaterCatharsis) repeat(2) draw_sprite_ext(sprite_index,floor(image_index),x,y,image_xscale,image_yscale,image_angle,c_white,1)
+with(WaterCatharsis) repeat(2) draw_sprite_ext(sprite_index,floor(image_index),x,y,image_xscale,image_yscale,image_angle,c_white,0.905)
 draw_set_blend_mode(bm_subtract)
 with(PlayerKiller) draw_sprite_ext(ternary(object_index=Cherry,sprCherry,sprite_index),floor(image_index),x,y,image_xscale,image_yscale,image_angle,c_black,1)
 with(Block) draw_sprite_ext(sprWhite,0,x,y,image_xscale,image_yscale,0,c_black,1);
