@@ -11,6 +11,9 @@ instance_destroy()
 with(Warp) {
 sprite_index=sprWarpLevis
 }
+with(Platform) {
+sprite_index=sprPlatformLevis
+}
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -37,42 +40,42 @@ applies_to=self
 */
 with SpikeUp {
 sprite_index = sprSpikeLevis
-image_index = 0
+image_index = 4
 image_speed = 0
 }
 with SpikeRight {
 sprite_index = sprSpikeLevis
-image_index = 1
+image_index = 5
 image_speed = 0
 }
 with SpikeDown {
 sprite_index = sprSpikeLevis
-image_index = 2
+image_index = 6
 image_speed = 0
 }
 with SpikeLeft {
 sprite_index = sprSpikeLevis
-image_index = 3
+image_index = 7
 image_speed = 0
 }
 with MiniSpikeUp {
 sprite_index = sprMiniLevis
-image_index = 0
+image_index = 4
 image_speed = 0
 }
 with MiniSpikeRight {
 sprite_index = sprMiniLevis
-image_index = 1
+image_index = 5
 image_speed = 0
 }
 with MiniSpikeDown {
 sprite_index = sprMiniLevis
-image_index = 2
+image_index = 6
 image_speed = 0
 }
 with MiniSpikeLeft {
 sprite_index = sprMiniLevis
-image_index = 3
+image_index = 7
 image_speed = 0
 }
 with Cherry {
@@ -148,8 +151,8 @@ draw_set_blend_mode(bm_subtract)
 draw_surface(surf2,0,0)
 draw_set_blend_mode(bm_normal)
 surface_set_target(application_surface)
-draw_surface_ext(surf4,view_xview,view_yview,1,1,0,c_white,0.25);
-draw_surface_ext(surf,view_xview,view_yview,1,1,0,c_white,0.85);
+draw_surface_ext(surf4,view_xview,view_yview,1,1,0,c_white,0.5);
+draw_surface_ext(surf,view_xview,view_yview,1,1,0,c_white,0.5);
 
 // spike master
 surface_set_target(surf5)
@@ -160,4 +163,4 @@ draw_set_blend_mode(bm_subtract)
 with(Block) draw_sprite_ext(sprWhite,0,x,y,image_xscale,image_yscale,0,make_color_rgb(255,255,255),1);
 draw_set_blend_mode(bm_normal)
 surface_set_target(application_surface)
-draw_surface_ext(surf5,view_xview,view_yview,1,1,0,c_white,0.85);
+draw_surface_ext(surf5,view_xview,view_yview,1,1,0,c_white,0.5);
