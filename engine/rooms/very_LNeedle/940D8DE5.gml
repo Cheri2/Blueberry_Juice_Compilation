@@ -1,4 +1,3 @@
 //gm82 fields begin
-room_to=rVeteranLobby
-autosave=true
+index=8
 //gm82 fields end

@@ -1,4 +1,4 @@
 //gm82 fields begin
-room_to=rVeteranLobby
-autosave=true
+lerp_amount=1
+screen_lock=true
 //gm82 fields end
