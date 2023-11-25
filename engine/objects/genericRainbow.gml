@@ -9,6 +9,11 @@ sf_mask1=surface_create(800,608);
 sf_inline=surface_create(800,608);
 with(Block) if(object_index=Block) sprite_index=sprWhite
 with(BlockMini) sprite_index=sprWhite1616
+with(Platform)
+{
+instance_create(x,y,vor_Platform)
+instance_destroy()
+}
 with(PlayerKiller) visible=false
 instance_create(0,0,genericRainbowChild)
 with(SaveHard) {

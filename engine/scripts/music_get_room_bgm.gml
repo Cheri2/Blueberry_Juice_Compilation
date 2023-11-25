@@ -23,6 +23,7 @@ switch(room) {
     case vor_room4:
     case vor_room5:
     case vor_room6:
+    case vor_room7:
     case vor_roomend:
         return "musVoracious"
     case rBlueberry1:
