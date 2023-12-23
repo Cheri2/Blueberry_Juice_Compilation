@@ -41,9 +41,9 @@ var _current_max_vspeed, _ice, _conveyor;
 
 _ice = instance_place(x, y + global.grav, IceBlock);
 
-vine_direction = place_meeting(x + 1, y, VineRight);
+vine_direction = place_meeting(x+1, y, VineRight);
 if vine_direction == 0 {
-    vine_direction = -place_meeting(x - 1, y, VineLeft);
+    vine_direction = -1 * place_meeting(x - 1, y, VineLeft);
 }
 
 // Horizontal movement
@@ -60,7 +60,7 @@ if h_input != 0 if vine_direction == 0 {
 }
 if(!place_meeting(x,y,WaterDream)) {
 if _ice == noone {
-    hspeed = h_input * run_speed;
+        if ((vine_direction==h_input)||h_input==0||vine_direction==0) hspeed = h_input * run_speed;
 }
 else {
     if h_input != 0 {
@@ -399,8 +399,7 @@ applies_to=self
 
     if (global.grav==-1) platformOffset=sprite_get_yoffset(mask_index)
     else platformOffset=sprite_get_height(mask_index)-sprite_get_yoffset(mask_index)
-
-
+    checkOffset=0
     if (global.grav==1) {
         //platforms, normal gravity
 
@@ -416,24 +415,28 @@ applies_to=self
         ytop=bbox_bottom+1
         y=oy
 
-        if (y-vspeed/2<=ytop) {
-            //check for platform snap
-            if (other.snap || vspeed-other.vspeed>=0) {
+        //change snap type for CustomSnap platforms
+        var snap_var;
+        snap_var=0;
+
+        //check platform snap type
+        if (check_plat_snap(1,snap_var)) {
+            if (snap_var!=2 && (snap_var!=3 && other.image_angle mod 90!=0) || vspeed-other.vspeed>=0) {
                 y=ytop-platformOffset
                 if (!place_free(x,y)) {
                     //crushed!
                     if (other.vspeed<0) {
-                        move_outside_solid(270,20)
+                        if (!global.strong_platforms) move_outside_solid(270,20)
                     } else y=oy
                 } else {
                     //land on it
                     vspeed=max(0,other.vspeed)
                     player_land()
-                    on_floor=1
 
                 }
             }
-
+            vsplatform=max(0,other.vspeed)
+            walljumpboost=0
         }
     } else {
         //upside down platforms
@@ -450,24 +453,28 @@ applies_to=self
         ytop=bbox_top
         y=oy
 
-        if (y-vspeed/2>=ytop) {
-            if (other.snap || vspeed-other.vspeed<=0) {
-                //check for platform snap
+        //change snap type for CustomSnap platforms
+        var snap_var;
+        snap_var=other.snap_type
+
+        //check platform snap type
+        if (check_plat_snap(-1,snap_var)) {
+            if (snap_var!=2 && (snap_var!=3 && other.image_angle mod 90!=0) || vspeed-other.vspeed<=0) {
                 y=ytop+platformOffset
                 if (!place_free(x,y)) {
                     //crushed!
                     if (other.vspeed>0) {
-                         move_outside_solid(270,20)
+                        if (!global.strong_platforms) move_outside_solid(270,20)
                     } else y=oy
                 } else {
                     //land on it
                     vspeed=min(0,other.vspeed)
                     player_land()
-                    on_floor=1
 
                 }
             }
-
+            vsplatform=min(0,other.vspeed)
+            walljumpboost=0
         }
     }
 #define Other_4
