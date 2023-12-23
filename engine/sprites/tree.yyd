@@ -74,6 +74,7 @@
 	|sprSaveHard
 	|sprSaveHardFlip
 	|sprSaveVeryHard
+	|sprite157
 	|sprSaveVeryHardFlip
 +Gimmicks
 	|sprWater
@@ -151,3 +152,5 @@
 |sprite153
 |sprChikenKiller
 |sprPlatformLevis
+|sprite158
+|sprite159_sprite66_Celtic_Eye_Kristen_Fox

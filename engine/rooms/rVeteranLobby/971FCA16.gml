@@ -4,6 +4,6 @@ autosave=true
 text="L-Needle? by verycool"
 rangemin=-2
 rangemax=-3
-diff=0
+diff=1
 clear_id=8
 //gm82 fields end

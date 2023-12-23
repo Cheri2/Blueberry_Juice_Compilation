@@ -4,6 +4,6 @@ autosave=true
 text="Colorful Return by Stella"
 rangemin=-2
 rangemax=-3
-diff=1
+diff=2
 clear_id=6
 //gm82 fields end

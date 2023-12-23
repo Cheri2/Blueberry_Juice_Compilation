@@ -53,6 +53,7 @@
 	|SaveHard
 	|SaveHardFlip
 	|SaveVeryHard
+	|SaveAlign
 	|SaveVeryHardFlip
 +Gimmicks
 	+Water
